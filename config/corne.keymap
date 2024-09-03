@@ -14,29 +14,6 @@
 #define MO_TO(layer) &mo_to layer layer
 
 / {
-    macros {
-        copy: macro_copy {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp LGUI &kp C>;
-        };
-
-        cut: macro_cut {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp LGUI &kp X>;
-        };
-
-        paste: macro_paste {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp LGUI &kp V>;
-        };
-    };
-
     behaviors {
         mo_to: behavior_mo_to {
             compatible = "zmk,behavior-hold-tap";
@@ -87,15 +64,15 @@
 
         raise_layer {
             // -----------------------------------------------------------------------------------------
-            // | ▼ |  •  | F2  |  •  | F12 |  •  |              | • |  •   |  I   |  •  |   •   | ▼ |
-            // | ▼ |  X  |  C  | OPT |  V  |  •  |              | • | LEFT | DOWN | UP  | RIGHT | ▼ |
-            // | ▼ |  •  |  •  |  •  |  •  |  •  |              | • |  •   |  K   |  •  |   •   | ▼ |
-            //                       | ▼ | ▼ | ▼ |              | ▼ | TO0 | ▼ |
+            // | ▼ |   •  |  F2  |  •  |  F12  |  •  |                  | • |  •   |  I   |  •  |   •   | ▼ |
+            // | ▼ |  CUT | COPY | OPT | PASTE |  •  |                  | • | LEFT | DOWN | UP  | RIGHT | ▼ |
+            // | ▼ | UNDO |   •  |  •  |   •   |  •  |                  | • |  •   |  K   |  •  |   •   | ▼ |
+            //                           | ▼ | ▼ | ▼ |                  | ▼ | TO0 | ▼ |
             bindings = <
-                &trans &none &kp F2 &none &kp F12 &none         &none &none &kp I &none &none &trans
-                &trans &cut &copy &kp LALT &paste &none         &none &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
-                &trans &none &none &none &none &none            &none &none &kp K &none &none &trans
-                            &trans &trans &trans                &trans &to DEFAULT &trans
+                &trans &none &kp F2 &none &kp F12 &none                 &none &none &kp I &none &none &trans
+                &trans &kp LG(X) &kp LG(C) &kp LALT &kp LG(V) &none     &none &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
+                &trans &kp LG(Z) &none &none &none &none                &none &none &kp K &none &none &trans
+                            &trans &trans &trans                        &trans &to DEFAULT &trans
             >;
         };
     };
