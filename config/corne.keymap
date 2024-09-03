@@ -14,6 +14,29 @@
 #define MO_TO(layer) &mo_to layer layer
 
 / {
+    macros {
+        copy: macro_copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LGUI &kp C>;
+        };
+
+        cut: macro_cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LGUI &kp X>;
+        };
+
+        paste: macro_paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LGUI &kp V>;
+        };
+    };
+
     behaviors {
         mo_to: behavior_mo_to {
             compatible = "zmk,behavior-hold-tap";
@@ -70,7 +93,7 @@
             //                       | ▼ | ▼ | ▼ |              | ▼ | TO0 | ▼ |
             bindings = <
                 &trans &none &kp F2 &none &kp F12 &none         &none &none &kp I &none &none &trans
-                &trans &kp X &kp C &kp LALT &kp V &none         &none &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
+                &trans &cut &copy &kp LALT &paste &none         &none &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
                 &trans &none &none &none &none &none            &none &none &kp K &none &none &trans
                             &trans &trans &trans                &trans &to DEFAULT &trans
             >;
