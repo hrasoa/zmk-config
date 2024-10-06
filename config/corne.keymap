@@ -44,7 +44,7 @@
                 &kp LCTRL &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P &kp ESC
                 &kp TAB &kp A &kp S &kp D &kp F &kp G       &kp H &kp J &kp K &kp L &kp SEMI &kp BSPC
                 &kp LSHFT &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
-                            &kp LALT &kp LGUI &kp SPACE     &kp RET &mo_to_morph &kp RGUI
+                            &kp LALT &kp LGUI &kp RET       &kp SPACE &mo_to_morph &kp RGUI
             >;
         };
 
@@ -64,15 +64,15 @@
 
         raise_layer {
             // -----------------------------------------------------------------------------------------
-            // | ▼ |   •  |  F2  |  •  |  F12  |  •  |                  | • |  •   |  I   |  •  |   •   | ▼ |
-            // | ▼ |  CUT | COPY | OPT | PASTE |  •  |                  | • | LEFT | DOWN | UP  | RIGHT | ▼ |
-            // | ▼ | UNDO |   •  |  •  |   •   |  •  |                  | • |  •   |  K   |  •  |   •   | ▼ |
-            //                           | ▼ | ▼ | ▼ |                  | ▼ | TO0 | ▼ |
+            // | ▼ |   •  |   F2 |    •   |     F12  |     •    |           | • |  •   |  I   |  •  |   •   | ▼ |
+            // | ▼ |   •  |  OPT | CMD(D) |  CMD(F)  |     •    |           | • | LEFT | DOWN | UP  | RIGHT | ▼ |
+            // | ▼ | UNDO |  CUT |   COPY |  PASTE   |  CMD(B)  |           | • |  •   |  K   |  •  |   •   | ▼ |
+            //                                      | ▼ | ▼ | ▼ |           | ▼ | TO0 | ▼ |
             bindings = <
-                &trans &none &kp F2 &none &kp F12 &none                 &none &none &kp I &none &none &trans
-                &trans &kp LG(X) &kp LG(C) &kp LALT &kp LG(V) &none     &none &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
-                &trans &kp LG(Z) &none &none &none &none                &none &none &kp K &none &none &trans
-                            &trans &trans &trans                        &trans &to DEFAULT &trans
+                &trans &none &kp F2 &none &kp F12 &none                     &none &none &kp I &none &none &trans
+                &trans &none &kp LALT &kp LG(D) &kp LG(F) &none             &none &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
+                &trans &kp LG(Z) &kp LG(X) &kp LG(C) &kp LG(V) &kp LG(B)    &none &none &kp K &none &none &trans
+                            &trans &trans &trans                            &trans &to DEFAULT &trans
             >;
         };
     };
