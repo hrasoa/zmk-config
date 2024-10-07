@@ -64,14 +64,14 @@
 
         raise_layer {
             // -----------------------------------------------------------------------------------------
-            // | ▼ |   •  |   F2 | CMD(E) |    F12   |     •    |           | • |  •   |  I   |  •  |   •   | ▼ |
-            // | ▼ |   •  | CTRL | CMD(D) |  CMD(F)  |     •    |           | • | LEFT | DOWN | UP  | RIGHT | ▼ |
-            // | ▼ | UNDO |  CUT |   COPY |  PASTE   |  CMD(B)  |           | • |  •   |  K   |  •  |   •   | ▼ |
-            //                                      | ▼ | ▼ | ▼ |           | ▼ | ▼ | TO0 | 
+            // | ▼ |   •  |   F2 | CMD(E) |    F12   |     •    |           | • |  •   |  CMD(I) |  •  |   •   | ▼ |
+            // | ▼ |   •  | CTRL | CMD(D) |  CMD(F)  |     •    |           | • | LEFT |   DOWN  | UP  | RIGHT | ▼ |
+            // | ▼ | UNDO |  CUT |   COPY |  PASTE   |  CMD(B)  |           | • |  •   |  CMD(K) |  •  |   •   | ▼ |
+            //                                      | ▼ | ▼ | ▼ |           | ▼ | ▼ | TO0 |
             bindings = <
-                &trans &none &kp F2 &kp LG(E) &kp F12 &none                 &none &none &kp I &none &none &trans
+                &trans &none &kp F2 &kp LG(E) &kp F12 &none                 &none &none &kp LG(I) &none &none &trans
                 &trans &none &kp LALT &kp LG(D) &kp LG(F) &none             &none &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
-                &trans &kp LG(Z) &kp LG(X) &kp LG(C) &kp LG(V) &kp LG(B)    &none &none &kp K &none &none &trans
+                &trans &kp LG(Z) &kp LG(X) &kp LG(C) &kp LG(V) &kp LG(B)    &none &none &kp LG(K) &none &none &trans
                             &trans &trans &trans                            &trans &trans &to DEFAULT
             >;
         };
