@@ -39,12 +39,12 @@
             // | CTRL |  Q  |  W  |  E  |  R  |  T  |       |  Y  |  U   |  I  |  O  |  P  | ESC   |
             // |  TAB |  A  |  S  |  D  |  F  |  G  |       |  H  |  J   |  K  |  L  | :;  | BKSP  |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |       |  N  |  M   | <,  | >.  | ?/  | SHIFT |
-            //                    | OPT | CMD | RET |       | SPACE | MO  | CMD |
+            //                  | OPT | CMD | SPACE |       | RET | CMD | MO |
             bindings = <
                 &kp LCTRL &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P &kp ESC
                 &kp TAB &kp A &kp S &kp D &kp F &kp G       &kp H &kp J &kp K &kp L &kp SEMI &kp BSPC
                 &kp LSHFT &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
-                            &kp LALT &kp LGUI &kp RET       &kp SPACE &mo_to_morph &kp RGUI
+                            &kp LALT &kp LGUI &kp SPACE     &kp RET &kp RGUI &mo_to_morph
             >;
         };
 
@@ -53,12 +53,12 @@
             // | ▼ |  !  |  @  |  #  |  $  |  %  |                      |  ^  |  &  |  *  |  (  |  )  | ▼ |
             // | ▼ |  1  |  2  |  3  |  4  |  5  |                      | _-  | +=  |  >  | {[  |  ]} | ▼ |
             // | ▼ |  6  |  7  |  8  |  9  |  0  |                      | ~`  | "'  | |\  |  {  |  }  | ▼ |
-            //                       | ▼ | ▼ | ▼ |                      | ▼ |  MO(2)  | ▼ |
+            //                       | ▼ | ▼ | ▼ |                      | ▼ | ▼ | MO |
             bindings = <
                 &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &trans
                 &trans &kp N1 &kp N2 &kp N3 &kp N4 &kp N5               &kp MINUS &kp EQUAL &kp GT &kp LBKT &kp RBKT &trans
                 &trans &kp N6 &kp N7 &kp N8 &kp N9 &kp N0               &kp GRAVE &kp APOS &kp NUBS &kp LBRC &kp RBRC &trans
-                                            &trans &trans &trans        &trans MO_TO(RAISE) &trans
+                                            &trans &trans &trans        &trans &trans MO_TO(RAISE)
             >;
         };
 
@@ -67,12 +67,12 @@
             // | ▼ |   •  |   F2 | CMD(E) |    F12   |     •    |           | • |  •   |  I   |  •  |   •   | ▼ |
             // | ▼ |   •  | CTRL | CMD(D) |  CMD(F)  |     •    |           | • | LEFT | DOWN | UP  | RIGHT | ▼ |
             // | ▼ | UNDO |  CUT |   COPY |  PASTE   |  CMD(B)  |           | • |  •   |  K   |  •  |   •   | ▼ |
-            //                                      | ▼ | ▼ | ▼ |           | ▼ | TO0 | ▼ |
+            //                                      | ▼ | ▼ | ▼ |           | ▼ | ▼ | TO0 | 
             bindings = <
                 &trans &none &kp F2 &kp LG(E) &kp F12 &none                     &none &none &kp I &none &none &trans
                 &trans &none &kp LALT &kp LG(D) &kp LG(F) &none             &none &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
                 &trans &kp LG(Z) &kp LG(X) &kp LG(C) &kp LG(V) &kp LG(B)    &none &none &kp K &none &none &trans
-                            &trans &trans &trans                            &trans &to DEFAULT &trans
+                            &trans &trans &trans                            &trans &trans &to DEFAULT
             >;
         };
     };
