@@ -35,16 +35,22 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // -----------------------------------------------------------------------------------------
-            // | CTRL |  Q  |  W  |  E  |  R  |  T  |       |  Y  |  U   |  I  |  O  |  P  | ESC   |
-            // |  TAB |  A  |  S  |  D  |  F  |  G  |       |  H  |  J   |  K  |  L  | :;  | BKSP  |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |       |  N  |  M   | <,  | >.  | ?/  | SHIFT |
-            //                  | OPT | CMD | SPACE |       | RET | CMD | MO |
             bindings = <
-                &kp LCTRL &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P &kp ESC
-                &kp TAB &kp A &kp S &kp D &kp F &kp G       &kp H &kp J &kp K &kp L &kp SEMI &kp BSPC
-                &kp LSHFT &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
-                            &kp LALT &kp LGUI &kp SPACE     &kp RET &kp RGUI &mo_to_morph
+                // ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
+                // │          │          │          │          │          │          │   │          │          │          │          │          │          │
+                // │  CTRL    │  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │  ESC     │
+                   &kp LCTRL     &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y     &kp U       &kp I      &kp O      &kp P      &kp ESC
+                // ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+                // │          │          │          │          │          │          │   │          │          │          │          │  :       │          │
+                // │  TAB     │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ;       │  BKSP    │
+                   &kp TAB       &kp A      &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L   &kp SEMI   &kp BSPC
+                // ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+                // │          │          │          │          │          │          │   │          │          │  INF     │  SUP     │  ?       │          │
+                // │  LSHIFT  │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  ,       │  .       │  /       │  RSHIFT  │
+                   &kp LSHFT     &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M   &kp COMMA  &kp DOT    &kp FSLH   &kp RSHIFT
+                // ╰──────────┴──────────┴──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
+                                                    &kp LALT   &kp LGUI   &kp SPACE      &kp RET    &kp RGUI   &mo_to_morph
+                //                                  ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
 
