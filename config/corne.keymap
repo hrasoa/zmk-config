@@ -27,7 +27,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <MO_TO(LOWER)>, <MO_TO(RAISE)>;
-            mods = <(MOD_LSHIFT)>;
+            mods = <(MOD_LGUI)>;
         };
     };
 
