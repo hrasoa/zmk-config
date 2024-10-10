@@ -23,11 +23,18 @@
             bindings = <&mo>, <&to>;
         };
 
-        mo_to_morph: behavior_mo_to_morph {
+        mo_default: behavior_mo_default {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <MO_TO(LOWER)>, <MO_TO(RAISE)>;
             mods = <(MOD_RGUI)>;
+        };
+
+        rclk: grave_escape {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RET>, <&kp RCLK>;
+            mods = <(MOD_LALT)>;
         };
     };
 
@@ -49,7 +56,7 @@
                 // │  LSHIFT  │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  ,    ≤  │  .    ≥  │  /       │  RSHIFT  │
                    &kp LSHFT     &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M   &kp COMMA  &kp DOT    &kp FSLH   &kp RSHIFT
                 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
-                                                    &kp LEFT   &kp LALT   &kp SPACE      &kp RET    &mo_to_morph  &kp RIGHT
+                                                    &kp LEFT   &kp LALT   &kp SPACE         &rclk   &mo_default  &kp RIGHT
                 //                                  ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
