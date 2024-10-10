@@ -90,8 +90,8 @@
                       &trans     &none      &kp F2  &kp LG(E)     &kp F4     &kp F12        &none      &none   &kp LG(K)  &kp LG(I)     &none      &trans
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
                 // │          │          │          │          │          │          │   │          │          │          │          │          │          │
-                // │  ▼       │          │          │  CMD(D)  │  CMD(F)  │          │   │          │  LEFT    │  DOWN    │  UP      │  RIGHT   │  ▼       │
-                      &trans     &none      &none   &kp LG(D)  &mt LGUI LG(F) &none         &none   &mt RGUI LEFT &kp DOWN   &kp UP  &kp RIGHT     &trans
+                // │  ▼       │          │  LCTRL   │  CMD(D)  │  CMD(F)  │          │   │          │  LEFT    │  DOWN    │  UP      │  RIGHT   │  ▼       │
+                      &trans     &none   &kp LCTRL  &kp LG(D)  &mt LGUI LG(F) &none         &none   &mt RGUI LEFT &kp DOWN   &kp UP  &kp RIGHT     &trans
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
                 // │          │          │          │          │          │          │   │          │          │          │          │          │          │
                 // │  ▼       │  UNDO    │  CUT     │  COPY    │  PASTE   │  CMD(B)  │   │          │          │          │          │          │  ▼       │
