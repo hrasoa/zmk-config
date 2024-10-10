@@ -49,7 +49,7 @@
                 // │  LSHIFT  │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  ,    ≤  │  .    ≥  │  /       │  RSHIFT  │
                    &kp LSHFT     &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M   &kp COMMA  &kp DOT    &kp FSLH   &kp RSHIFT
                 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
-                                                       &none   &kp LALT   &kp SPACE      &kp RET    &mo_to_morph &none
+                                                       &none   &kp LALT   &kp SPACE      &kp RET    &mo_to_morph  &none
                 //                                  ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -82,8 +82,8 @@
                       &trans     &none      &kp F2  &kp LG(E)     &kp F4     &kp F12        &none      &none   &kp LG(K)  &kp LG(I)     &none      &trans
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
                 // │          │          │          │          │          │          │   │          │          │          │          │          │          │
-                // │  ▼       │          │  OPT     │  CMD(D)  │  CMD(F)  │          │   │          │  LEFT    │  DOWN    │  UP      │  RIGHT   │  ▼       │
-                      &trans     &none   &kp LALT   &kp LG(D)  &kp LG(F)     &none          &none   &kp LEFT   &kp DOWN      &kp UP  &kp RIGHT     &trans
+                // │  ▼       │          │          │  CMD(D)  │  CMD(F)  │          │   │          │  LEFT    │  DOWN    │  UP      │  RIGHT   │  ▼       │
+                      &trans     &none      &none   &kp LG(D)  &mt LGUI LG(F) &none          &none   &kp LEFT   &kp DOWN      &kp UP  &kp RIGHT     &trans
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
                 // │          │          │          │          │          │          │   │          │          │          │          │          │          │
                 // │  ▼       │  UNDO    │  CUT     │  COPY    │  PASTE   │  CMD(B)  │   │          │          │          │          │          │  ▼       │
