@@ -8,7 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
 #define LOWER   1
@@ -48,7 +47,7 @@
                 // ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
                 // │          │          │          │          │          │          │   │          │          │          │          │          │          │
                 // │  CMD(W)  │  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │  ESC     │
-                   &bt BT_CLR    &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y     &kp U       &kp I      &kp O      &kp P      &kp ESC
+                &mt CMD(Q) CMD(W) &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y     &kp U       &kp I      &kp O      &kp P      &kp ESC
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
                 // │          │          │          │          │          │          │   │          │          │          │          │  :       │          │
                 // │  TAB     │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ;    …  │  BKSP    │
