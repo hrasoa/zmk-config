@@ -49,7 +49,7 @@
                 // │  LSHIFT  │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  ,    ≤  │  .    ≥  │  /       │  RSHIFT  │
                    &kp LSHFT     &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M   &kp COMMA  &kp DOT    &kp FSLH   &kp RSHIFT
                 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
-                                                       &none   &kp LALT   &kp SPACE      &kp RET    &mo_to_morph  &none
+                                                    &kp LEFT   &kp LALT   &kp SPACE      &kp RET    &mo_to_morph  &kp RIGHT
                 //                                  ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
