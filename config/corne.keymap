@@ -43,7 +43,7 @@
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
                 // │          │          │          │          │          │          │   │          │          │          │          │  :       │          │
                 // │  TAB     │  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ;    …  │  BKSP    │
-                   &kp TAB       &kp A   &mt LCTRL S   &kp D   &mt LGUI F    &kp G          &kp H   &mt RGUI J    &kp K   &mt LCTRL L   &kp SEMI   &kp BSPC
+                   &kp TAB       &kp A   &mt LCTRL S   &kp D   &mt LGUI F    &kp G          &kp H   &mt RGUI J &mt RALT K &mt LCTRL L   &kp SEMI   &kp BSPC
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
                 // │          │          │          │          │          │          │   │          │          │  LT      │  GT      │  ?       │          │
                 // │  LSHIFT  │  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │  ,    ≤  │  .    ≥  │  /       │  RSHIFT  │
@@ -83,7 +83,7 @@
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
                 // │          │          │          │          │          │          │   │          │          │          │          │          │          │
                 // │  ▼       │          │          │  CMD(D)  │  CMD(F)  │          │   │          │  LEFT    │  DOWN    │  UP      │  RIGHT   │  ▼       │
-                      &trans     &none      &none   &kp LG(D)  &mt LGUI LG(F) &none          &none   &kp LEFT   &kp DOWN      &kp UP  &kp RIGHT     &trans
+                      &trans     &none      &none   &kp LG(D)  &mt LGUI LG(F) &none         &none   &mt RGUI LEFT &kp DOWN   &kp UP  &kp RIGHT     &trans
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
                 // │          │          │          │          │          │          │   │          │          │          │          │          │          │
                 // │  ▼       │  UNDO    │  CUT     │  COPY    │  PASTE   │  CMD(B)  │   │          │          │          │          │          │  ▼       │
