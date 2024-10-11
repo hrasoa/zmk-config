@@ -13,6 +13,7 @@
 #define LOWER   1
 #define RAISE   2
 #define MO_TO(layer) &mo_to layer layer
+#define MO_KEY_TO(key, layer) &mo_to key layer
 
 / {
     behaviors {
@@ -36,16 +37,6 @@
             #binding-cells = <0>;
             bindings = <&kp RET>, <&mkp RCLK>;
             mods = <(MOD_LALT)>;
-        };
-    };
-
-    macros {
-        to_default: macro_to_default {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &to DEFAULT>
-                ;
         };
     };
 
@@ -87,7 +78,7 @@
                 // │  ▼       │  6       │  7       │  8       │  9       │  0       │   │  `       │  '       │  \       │  {       │  }       │  ▼       │
                       &trans     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0      &kp GRAVE  &kp APOS   &kp NUBS   &kp LBRC   &kp RBRC      &trans
                 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
-                                                    &trans        &mt LALT   &trans         &trans  MO_TO(RAISE)  &trans  
+                                                    &trans MO_KEY_TO(LALT, DEFAULT) &trans  &trans  MO_TO(RAISE)  &trans  
                 //                                  ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
