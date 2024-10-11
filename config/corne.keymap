@@ -39,6 +39,16 @@
         };
     };
 
+    macros {
+        to_default: macro_to_default {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &to DEFAULT>
+                ;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -77,7 +87,7 @@
                 // │  ▼       │  6       │  7       │  8       │  9       │  0       │   │  `       │  '       │  \       │  {       │  }       │  ▼       │
                       &trans     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0      &kp GRAVE  &kp APOS   &kp NUBS   &kp LBRC   &kp RBRC      &trans
                 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
-                                                    &trans  &mt LALT <(&to DEFAULT)> &trans   &trans  MO_TO(RAISE)  &trans  
+                                                    &trans        &mt LALT   &trans         &trans  MO_TO(RAISE)  &trans  
                 //                                  ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
