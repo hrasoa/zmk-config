@@ -13,7 +13,7 @@
 #define LOWER   1
 #define RAISE   2
 #define MO_TO(layer) &mo_to layer layer
-#define MO_KEY_TO(key, layer) &mo_to key layer
+#define MO_KEY_TO(key, layer) &mo_key_to key layer
 
 / {
     behaviors {
@@ -23,6 +23,14 @@
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&to>;
+        };
+
+        mo_key_to: behavior_mo_key_to {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&to>;
         };
 
         mo_default: behavior_mo_default {
