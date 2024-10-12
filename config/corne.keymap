@@ -15,7 +15,7 @@
 #define MO_KEY_TO(key, layer) &mo_key_to key layer
 
 &mt {
-    tapping-term-ms = <100>;
+    tapping-term-ms = <150>;
 };
 
 / {
