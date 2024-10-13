@@ -15,7 +15,6 @@
 #define MO_KEY_TO(key, layer) &mo_key_to key layer
 
 &mt {
-    tapping-term-ms = <150>;
     flavor = "tap-preferred";
 };
 
@@ -25,7 +24,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&mo>, <&to>;
         };
 
@@ -33,7 +32,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&kp>, <&to>;
         };
 
