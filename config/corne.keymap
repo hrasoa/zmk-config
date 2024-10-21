@@ -99,8 +99,8 @@
                       &trans     &none   &kp LCTRL  &kp LG(D)  &mt LGUI LG(F) &none         &none   &mt RGUI LEFT &mt RALT DOWN &kp UP  &kp RIGHT     &trans
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
                 // │          │          │          │          │          │          │   │          │          │          │          │          │          │
-                // │  ▼       │  UNDO    │  CUT     │  COPY    │  PASTE   │  CMD(B)  │   │          │          │  PG_DN   │  PG_UP   │          │  ▼       │
-                      &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)         &none      &none   &kp PG_DN  &kp PG_UP     &none      &trans
+                // │  ▼       │  UNDO    │  CUT     │  COPY    │  PASTE   │  CMD(B)  │   │  CMD(N)  │ CMD(M)   │  PG_DN   │  PG_UP   │          │  ▼       │
+                      &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)      &kp LG(N)  &kp LG(M)  &kp PG_DN  &kp PG_UP     &none      &trans
                 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
                                                     &trans MO_KEY_TO(LALT, LOWER) &trans    &trans  &to DEFAULT   &trans  
                 //                                  ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
