@@ -1,0 +1,6 @@
+services:
+  zmk-cli:
+    build: .
+    volumes:
+      - ./:/app
+    working_dir: /app
