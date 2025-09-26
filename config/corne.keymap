@@ -64,13 +64,13 @@
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
                 // │          │   _SHIFT │    _CTRL │     _OPT │     _CMD │          │   │          │     _CMD │     _OPT │    _CTRL │   _SHIFT │          │
                 // │          │ A        │ S        │ D        │ F        │ G        │   │ H        │ J        │ K        │ L        │ BSPC     │          │
-                     &none    &mt LSHFT A  &mt LCTRL S &mt LALT D &mt LGUI F &kp G         &kp H   &mt RGUI J &mt RALT K    &mt LCTRL L &mo_bspc  &none
+                     &none    &mt LSHFT A  &mt LCTRL S &mt LALT D &mt LGUI F &kp G         &kp H    &mt RGUI J &mt RALT K   &mt LCTRL L &mo_bspc  &none
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
                 // │          │          │          │          │          │          │   │          │          │ LT       │ GT       │ ?        │          │
                 // │          │ Z        │ X        │ C        │ V        │ B        │   │ N        │ M        │ ,        │ .        │ /        │          │
                      &none      &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &none
                 // ╰──────────┴──────────┴──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
-                                                    &to BASE   MO_TO(NAV)  &kp SPACE       &kp RET  MO_TO(SYMB) &kp C_MUTE
+                                                      &to BASE   MO_TO(NAV) &kp SPACE      &kp RET  MO_TO(SYMB)  &kp C_MUTE
                 //                                  ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
