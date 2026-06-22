@@ -101,8 +101,8 @@
             bindings = <
                 // ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
                 // │          │          │          │          │          │          │   │          │          │          │          │          │          │
-                // │          │          │          │ 0        │ 1        │ CLR      │   │ F3       │ F4       │ CMD(I)   │ CMD(O)   │          │          │
-                     &none      &none      &none    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR   &kp F3     &kp F4     &kp LG(I)  &kp LG(O)  &none      &none
+                // │          │ 0        │ 1        │          │          │ CLR      │   │ F3       │ F4       │ CMD(I)   │ CMD(O)   │          │          │
+                     &none    &bt BT_SEL 0 &bt BT_SEL 1 &none    &none      &bt BT_CLR     &kp F3     &kp F4     &kp LG(I)  &kp LG(O)  &none      &none
                 // ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
                 // │          │   _SHIFT │          │     _OPT │     _CMD │          │   │          │          │          │          │          │          │
                 // │          │ ESC      │ LCTRL    │ CMD(D)   │ CMD(F)   │          │   │ F2       │ LEFT     │ DOWN     │ UP       │ RIGHT    │          │
