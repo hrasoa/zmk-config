@@ -1,5 +1,5 @@
 services:
-  zmk-cli:
+  zmk:
     build: .
     volumes:
       - ./:/app
