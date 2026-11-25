@@ -12,7 +12,6 @@
 #define SYMB    1
 #define NAV     2
 #define MO_TO(layer) &mo_to layer layer
-#define MO_KEY_TO(key, layer) &mo_key_to key layer
 
 &mt {
     flavor = "tap-preferred";
@@ -28,26 +27,11 @@
             bindings = <&mo>, <&to>;
         };
 
-        mo_key_to: behavior_mo_key_to {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <250>;
-            bindings = <&kp>, <&to>;
-        };
-
-        mo_base: behavior_mo_base {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <MO_TO(SYMB)>, <MO_TO(NAV)>;
-            mods = <(MOD_RGUI)>;
-        };
-
         mo_bspc: behavior_mo_bspc {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&mt RSHIFT BSPC>, <&kp BSPC>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
